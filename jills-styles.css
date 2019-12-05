@@ -1,0 +1,75 @@
+html,
+body {
+	font-family: monospace;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.wrapper {
+	width: 90%;
+}
+section {
+	min-height: 100vh;
+}
+
+section .wrapper {
+	padding-top: 16%;
+	/*opacity: 0;*/
+	transition: opacity .2s ease;
+}
+
+section.active .wrapper {
+	opacity: 1;
+}
+
+.site-header {
+	position: fixed;
+	height: 100%;
+	border-right: 2px solid #000;
+	z-index: 999;
+}
+/* Site Nav */
+.site-nav {
+	height: 100%;
+	width: 69px;
+	background-color: #fff;
+	overflow: hidden;
+	transition: width .2s ease;
+}
+.site-nav.active {
+	width: calc(69px + 100px);
+}
+.trigger {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	transform: translateX(69px);
+}
+/* End Site nav */
+/* Form styles */
+label {
+	font-size: 12px;
+	font-weight: 800;
+}
+input,
+textarea {
+	width: 100%;
+	height: 33px;
+	margin-bottom: 21px;
+	padding: 12px;
+	font-size: 15px;
+	border: none;
+	box-shadow: 1px 1px 1px #0000001f;
+	box-sizing: border-box;
+	outline: none !important;
+	-webkit-appearance: none;
+}
+textarea {
+	min-height: 50px;
+}
+
+/* End Form styles */
+
+/* Footer styles */
+
+/* End Footer styles */
