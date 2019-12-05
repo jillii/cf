@@ -19,3 +19,8 @@ $('.page-link').click(function() {
 $(window).scroll(function(){
 
 });
+
+$(document).ready(function(){
+	$url = "https://www.facebook.com/pg/cakefact/events/";
+	console.log($.get($url));
+});
