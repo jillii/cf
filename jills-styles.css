@@ -1,3 +1,8 @@
+* {
+	box-sizing: border-box;
+	word-break: break-word;
+	max-width: 100%;
+}
 html,
 body {
 	height: 100%;
@@ -5,6 +10,7 @@ body {
 	font-size: 11px;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	overflow: hidden;
 }
 a {
 	color: inherit;
@@ -13,23 +19,31 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+a.btn:hover {
+	text-decoration: none;
+}
 main {
-	background-color: #fff5ee57;
-	position: relative;
+	/*background-color: #fff5ee57;*/
+	height: 100%;
+	width: 100%;
 }
 .wrapper {
 	width: 90%;
 }
 section {
+	width: calc(100% - 69px);
+	max-width: 440px;
 	position: absolute;
 	left: 69px;
 }
 
 section .wrapper {
 	display: none;
+	padding-top: 44px;
+	background-color: #fff;
 	overflow-y: scroll;
 	width: 100%;
-	height: calc(100vh - 129px);
+	height: calc(100vh - 93px);
 	/*z-index: 1;*/
 }
 section .wrapper .copy {
@@ -120,3 +134,30 @@ textarea {
 	border: 2px solid;
 }
 /* End shows */
+/* Label */
+.release {
+	margin-bottom: 2em;
+}
+.release ol {
+	margin-bottom: 0;
+}
+.listen:before {
+	content: "--> ";
+}
+.listen {
+	display: block;
+	margin-top: 1em;
+}
+
+/* End label */
+/* Fooetr */
+footer {
+	position: absolute;
+	max-width: 440px;
+	width: 100%;
+	text-align: right;
+	bottom: 0;
+	width: calc(100vw - 69px);
+	left: 69px;
+	background-color: #fff;
+}
