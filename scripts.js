@@ -8,10 +8,10 @@ console.log("   O   O   //   ");
 
 $('.page-link').click(function() {
 
-
 	$this = $(this);
 	$id = $this.attr("href");
+	$el_w_id = $($id);
 
 	$('section.active').removeClass('active');
-	$($id).addClass('active');
+	$el_w_id.addClass('active');
 });
